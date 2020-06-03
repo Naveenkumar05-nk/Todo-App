@@ -1,0 +1,39 @@
+<h3 style="font-family: helvetica">Update Task</h3>
+
+<style>
+
+
+.btn-sub{
+  background-color: green; 
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px 4px;
+  cursor: pointer;
+   border-radius: 4px;
+   margin-top: 20px;
+
+}
+
+.form{
+font-weight: bold;
+font-family: helvetica;
+}
+
+
+
+
+</style>
+
+<form method="POST" action="">
+	{% csrf_token %}
+
+	<div class="form">{{form}}</div>
+	<input class="btn btn-sub"type="submit" name="Update Task">
+	
+	
+</form>

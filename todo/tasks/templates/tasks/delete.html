@@ -1,0 +1,49 @@
+<div class="del">
+<style>
+
+
+.btn-cancel{
+		  background-color: green; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Helvetica;
+  border-radius: 4px;
+
+}
+
+.btn-submit{
+  background-color: #cc0000; 
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+   border-radius: 4px;
+
+}
+
+</style>
+
+<h3 style="font-family: helvetica">Are you sure you want to delete "{{item}}"?</h3>
+
+<div class="content">
+<a class="btn btn-cancel" href="{% url 'list' %}" >Cancel</a>
+
+</div>
+
+<form method="POST" action="">
+	{% csrf_token %}
+	<input class="btn btn-submit" type="submit" name="Confirm">
+</form>
+</div>
